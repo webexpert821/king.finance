@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.7 23.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #64edac;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-779" y1="-899.67" x2="-779" y2="-900.9" gradientTransform="translate(16660.08 -3290.46) scale(21.37 -3.68)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe89b"/>
+      <stop offset=".17" stop-color="#fee091"/>
+      <stop offset=".45" stop-color="#fdcd76"/>
+      <stop offset=".82" stop-color="#fbaf4c"/>
+      <stop offset="1" stop-color="#fb9e34"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-781.45" y1="-627.16" x2="-781.44" y2="-627.92" gradientTransform="translate(22553.37 -11722.94) scale(28.84 -18.7)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="svg2575">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Group_29807" data-name="Group 29807">
+        <g id="Group_29805" data-name="Group 29805">
+          <path id="Rectangle_8878" data-name="Rectangle 8878" class="cls-1" d="M5.58,19.96H23.27c1.02,0,1.84,.82,1.84,1.84h0c0,1.02-.82,1.84-1.84,1.84H5.58c-1.02,0-1.84-.82-1.84-1.84h0c0-1.02,.82-1.84,1.84-1.84Z"/>
+          <path id="Path_30401" data-name="Path 30401" class="cls-4" d="M27.61,6.23l-4.36,2.86c-.32,.23-.77,.18-1.03-.11L15,.26c-.29-.32-.78-.35-1.1-.06-.02,.02-.04,.04-.06,.06L6.63,8.97c-.27,.3-.71,.35-1.04,.11L1.23,6.23c-.35-.25-.84-.17-1.09,.18-.13,.19-.18,.43-.12,.65l4.11,11.05c.09,.35,.4,.59,.76,.59h4.83c-.1-.18-.16-.38-.18-.58l-.45-4.12c-.04-.4,.08-.79,.34-1.1l3.86-4.58c.53-.63,1.46-.71,2.09-.18,.06,.05,.12,.11,.18,.18l3.85,4.58c.26,.31,.38,.7,.34,1.1l-.45,4.12c-.02,.2-.08,.4-.18,.58h4.82c.36,0,.67-.24,.75-.58l4.11-11.06c.11-.42-.14-.84-.56-.95-.22-.06-.46-.01-.65,.12h0Z"/>
+          <g id="Group_29804" data-name="Group 29804">
+            <path id="Path_30402" data-name="Path 30402" class="cls-3" d="M14.74,14.81h3.04l.04-.38c.03-.29-.06-.59-.25-.81l-2.32-2.76c-.13-.16-.31-.28-.51-.34v4.29h0Z"/>
+            <path id="Path_30403" data-name="Path 30403" class="cls-3" d="M11.06,14.81h3.04v-4.29c-.2,.06-.38,.18-.51,.34l-2.32,2.76c-.19,.23-.28,.52-.25,.81l.04,.38h0Z"/>
+            <path id="Path_30404" data-name="Path 30404" class="cls-3" d="M14.1,15.45h-2.97l.13,1.17c.06,.55,.52,.96,1.07,.96h1.77v-2.14Z"/>
+            <path id="Path_30405" data-name="Path 30405" class="cls-3" d="M14.74,15.45v2.14h1.77c.55,0,1.02-.42,1.07-.96l.13-1.17h-2.97Z"/>
+          </g>
+        </g>
+        <g id="Group_29806" data-name="Group 29806">
+          <path id="Path_30406" data-name="Path 30406" class="cls-2" d="M33.39,6.16h2.49v4.95l4.56-4.95h3.06l-4.63,4.8,4.82,6.52h-2.99l-3.51-4.82-1.31,1.36v3.46h-2.49V6.16h0Z"/>
+          <path id="Path_30407" data-name="Path 30407" class="cls-2" d="M45.32,6.16h2.49v11.32h-2.49V6.16Z"/>
+          <path id="Path_30408" data-name="Path 30408" class="cls-2" d="M50.64,6.16h2.3l5.31,6.97V6.16h2.46v11.32h-2.12l-5.48-7.2v7.2h-2.46V6.16h0Z"/>
+          <path id="Path_30409" data-name="Path 30409" class="cls-2" d="M62.92,11.85v-.03c-.03-3.21,2.56-5.83,5.77-5.86,.06,0,.11,0,.17,0,1.63-.09,3.23,.47,4.45,1.55l-1.57,1.89c-.8-.76-1.86-1.17-2.96-1.15-1.87,.08-3.32,1.66-3.25,3.53v.03c-.11,1.87,1.32,3.48,3.19,3.59,.08,0,.16,0,.24,0,.83,.03,1.65-.21,2.34-.68v-1.62h-2.51v-2.15h4.92v4.92c-1.34,1.16-3.06,1.8-4.84,1.8-3.12,.16-5.78-2.23-5.95-5.35,0-.16-.01-.31,0-.47h0Z"/>
+          <path id="Path_30410" data-name="Path 30410" class="cls-2" d="M76.42,6.16h.84v10.55h6.65v.78h-7.49V6.16Z"/>
+          <path id="Path_30411" data-name="Path 30411" class="cls-2" d="M90.66,6.08h.81l5.27,11.4h-.92l-1.44-3.17h-6.68l-1.44,3.17h-.87l5.27-11.4h0Zm3.36,7.47l-2.98-6.55-2.99,6.55h5.97Z"/>
+          <path id="Path_30412" data-name="Path 30412" class="cls-2" d="M99.13,6.16h.79l7.81,9.85V6.16h.81v11.32h-.63l-7.97-10.06v10.06h-.81V6.16h0Z"/>
+          <path id="Path_30413" data-name="Path 30413" class="cls-2" d="M111.91,6.16h3.77c3.56,0,6.02,2.44,6.02,5.63v.03c0,3.13-2.53,5.67-5.67,5.67-.12,0-.24,0-.35-.01h-3.77V6.16Zm.84,.78v9.77h2.93c2.65,.19,4.94-1.81,5.13-4.45,0-.13,.01-.27,.01-.4v-.03c.03-2.68-2.12-4.87-4.8-4.89-.11,0-.23,0-.34,0h-2.93Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
