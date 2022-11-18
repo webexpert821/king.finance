@@ -1,127 +1,187 @@
-
 .container {
     max-width: 1160px;
+    
     @media screen and (max-width: 1366px) {
         max-width: 900px;
     }
-
+    
     @media screen and (max-width: 1092px) {
         max-width: 768px;
     }
-
+    
     @media screen and (max-width: 840px) {
         max-width: 640px;
     }
-    
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        width: 100%;
-        @media screen and (max-width: 1092px) {
-            
-        }
-    }
-    
-    .button-area {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        .rect-button {
-            background: #1D1D1D 0% 0% no-repeat padding-box;
-            border-radius: 28px;
-            letter-spacing: -0.14px;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            transition: all linear 0.3s;
-            padding: 16px 32px;
-            font-weight: bolder;
-            border: none;
-            &:hover {
-                color: rgb(156, 153, 153);
-            }
-        }
-        .button-group {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            background: #1D1D1D 0% 0% no-repeat padding-box;
-            border-radius: 31px;
-            &:hover {
-                .btn-kingfloki, .btn-kingland, .btn-kingpad {
-                    filter: grayscale(1);
-                }
-            }
-            .btn-kingfloki {
-                background-image: url(../../../assets/Png/menukingfloki.png);
-                background-repeat: no-repeat;
-                background-size: 70%;
-                background-position: center center;
-                transition: all linear 0.3s;
-                &:hover {
-                    filter: grayscale(0);
-                }
-                padding: 5px 15px;
-            }
-            .btn-kingland {
-                background-image: url(../../../assets/Png/menukingland.png);
-                background-repeat: no-repeat;
-                background-size: 70%;
-                background-position: center center;
-                transition: all linear 0.3s;
-                &:hover {
-                    filter: grayscale(0);
-                }
-                padding: 5px 15px;
-            }
-            .btn-kingpad {
-                background-image: url(../../../assets/Png/menukingpad.png);
-                background-repeat: no-repeat;
-                background-size: 70%;
-                background-position: center center;
-                transition: all linear 0.3s;
-                &:hover {
-                    filter: grayscale(0);
-                }
-                padding: 5px 15px;
-            }
-            
-        }
-    }
-    .background-video-section {
-        width: 100%;
-        height: auto;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .background-video {
-            position:relative;
-            z-index:0;
-            width: 100%;
-            height: 100%;
-        }
-        .background-video-overlay {
-            position:absolute;
-            z-index:1;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            .king-finance  {
-                font-size: '7rem';
-                text-transform:'uppercase';
-                letter-spacing: -1.27px;
-                text-transform: uppercase;
-                font-weight: 100;
-                font-family: "gothin-thin";
-                display: flex;
-                gap: 4px;
+}
 
-                .king {
-                    font-family: "gotham-bold";
-                }
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+
+    @media screen and (max-width: 1092px) {}
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .rect-button {
+        background: #1D1D1D 0% 0% no-repeat padding-box;
+        border-radius: 28px;
+        letter-spacing: -0.14px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        transition: all linear 0.3s;
+        padding: 16px 32px;
+        font-weight: bolder;
+        border: none;
+        font-family: 'gotham-book';
+
+        &:hover {
+            color: rgb(156, 153, 153);
+        }
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background: #1D1D1D 0% 0% no-repeat padding-box;
+        border-radius: 31px;
+        &:hover {
+            .btn-kingfloki,
+            .btn-kingland,
+            .btn-kingpad {
+                filter: grayscale(1) brightness(0.50);
+            }
+        }
+
+        .btn-kingfloki {
+            background-image: url(../../../assets/Png/menukingfloki.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center center;
+            transition: all linear 0.6s;
+            &:hover {
+                filter: grayscale(0)
+            }
+
+            padding: 5px 15px;
+        }
+
+        .btn-kingland {
+            background-image: url(../../../assets/Png/menukingland.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center center;
+            transition: all linear 0.6s;
+            &:hover {
+                filter: grayscale(0)
+            }
+
+            padding: 5px 15px;
+        }
+
+        .btn-kingpad {
+            background-image: url(../../../assets/Png/menukingpad.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center center;
+            transition: all linear 0.6s;
+            &:hover {
+                filter: grayscale(0)
+            }
+
+            padding: 5px 15px;
+        }
+
+    }
+}
+
+.background-video-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background-video {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-video-overlay {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .king-finance {
+            font-size: 7rem;
+            text-transform: 'uppercase';
+            letter-spacing: -1.27px;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-family: "gothin-thin";
+            display: flex;
+            gap: 4px;
+
+            @media screen and (max-width: 1366px) {
+                font-size: 6rem;
+            }
+
+            @media screen and (max-width: 1092px) {
+                font-size: 5rem;
+            }
+
+            .king {
+                font-family: "gotham-bold";
+            }
+        }
+
+        .king-finance-bottom {
+            font-size: 30px;
+
+            @media screen and (max-width: 1092px) {
+                font-size: 25px;
             }
         }
     }
 }
 
+.about-king {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+
+    .king-details {
+        font-size: 20px;
+        letter-spacing: -0.21px;
+        line-height: 3rem;
+        width: 80%;
+        font-family: "gotham-thin";
+        text-align: left;
+    }
+
+    .king-logo {
+        padding-top:2rem;
+    }
+    .bold {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

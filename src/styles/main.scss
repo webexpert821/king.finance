@@ -148,6 +148,7 @@ body {
 	color: #fff;
 	font-family: 'Roboto', sans-serif, 'gotham-bold';
 	font-size: 36px;
+	scroll-behavior: smooth;
 }
 
 @font-face {
@@ -158,4 +159,9 @@ body {
 @font-face {
 	font-family: 'gotham-thin';
 	src: url('../assets/font/Gotham-Thin.otf') format('openType');
+}
+
+@font-face {
+	font-family: 'gotham-book';
+	src: url('../assets/font/GothamBook.ttf') format('openType');
 }
