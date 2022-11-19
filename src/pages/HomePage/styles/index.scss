@@ -1,19 +1,26 @@
 .container {
     max-width: 1160px;
     position: relative;
+    display: flex;
+
     @media screen and (max-width: 1366px) {
         max-width: 900px;
     }
-    
+
     @media screen and (max-width: 1092px) {
         max-width: 768px;
     }
-    
+
     @media screen and (max-width: 840px) {
         max-width: 640px;
     }
+
     @media screen and (max-width: 640px) {
         max-width: 500px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 400px;
     }
 }
 
@@ -24,186 +31,464 @@
     justify-content: center;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    @media screen and (max-width: 1092px) {
-    }
-}
+.section-1 {
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        gap: 3rem;
+        z-index: 1;
 
-.button-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+        @media screen and (max-width: 640px) {
+            justify-content: center;
+            gap: 0;
+        }
 
-    .rect-button {
-        background: #1D1D1D 0% 0% no-repeat padding-box;
-        border-radius: 28px;
-        letter-spacing: -0.14px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        transition: all linear 0.3s;
-        padding: 16px 32px;
-        font-weight: bolder;
-        border: none;
-        font-family: 'gotham-book';
-        // @media screen and (max-width: 1092px) {
-        //     padding: 12px 24px;
-        //     font-size: 14px;
-        // }
-        &:hover {
-            color: rgb(156, 153, 153);
+        .logo-img {
+            display: block;
+            width: 60px;
+            height: auto;
+
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
         }
     }
 
-    .button-group {
+    .button-area {
         display: flex;
         align-items: center;
-        cursor: pointer;
-        background: #1D1D1D 0% 0% no-repeat padding-box;
-        border-radius: 31px;
-        &:hover {
-            .btn-kingfloki,
-            .btn-kingland,
+        gap: 10px;
+
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+
+        .rect-buttons-group {
+            display: flex;
+            align-items: center;
+            // gap: 10px;
+            justify-content: end;
+            width: 100%;
+            @media screen and (max-width: 640px) {
+                justify-content: space-between;
+            }
+            @media screen and (max-width: 480px) {
+                width: 95%;
+            }
+            
+            .mobile-logo {
+                display: none;
+                @media screen and (max-width: 640px) {
+                    display: block;
+                }
+                .mobile-logo-img {
+                    width: 60px;
+                    height: auto;
+                }
+            }
+
+            .rect-buttons {
+                display: flex;
+                gap: 10px;
+
+                .rect-button {
+                    background: #1D1D1D 0% 0% no-repeat padding-box;
+
+                    border-radius: 28px;
+                    letter-spacing: -0.14px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    transition: all linear 0.3s;
+                    padding: 16px 32px;
+                    font-weight: bolder;
+                    border: none;
+                    font-family: 'gotham-book';
+                    @media screen and (max-width: 640px) {
+                        background: none;
+                        padding: 10px;
+                    }
+                    // @media screen and (max-width: 1092px) {
+                    //     padding: 12px 24px;
+                    //     font-size: 14px;
+                    // }
+                    &:hover {
+                        color: rgb(156, 153, 153);
+                    }
+                }
+            }
+        }
+
+        .button-group {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            background: #1D1D1D 0% 0% no-repeat padding-box;
+            border-radius: 31px;
+            
+            &:hover {
+                .btn-kingfloki,
+                .btn-kingland,
+                .btn-kingpad {
+                    filter: grayscale(1) brightness(0.50);
+                }
+            }
+
+            .btn-kingfloki {
+                background-image: url(../../../assets/Png/menukingfloki.png);
+                background-repeat: no-repeat;
+                background-size: 70%;
+                background-position: center center;
+                transition: all linear 0.6s;
+                &:hover {
+                    filter: grayscale(0)
+                }
+                padding: 5px 15px;
+                @media screen and (max-width: 480px) {
+                    padding: 0;
+                }
+                @media screen and (max-width: 360px) {
+                    padding: 0;
+                    width: 100px;
+                    height: 36px;
+                    background-size: 80%;
+                }
+
+            }
+
+            .btn-kingland {
+                background-image: url(../../../assets/Png/menukingland.png);
+                background-repeat: no-repeat;
+                background-size: 70%;
+                background-position: center center;
+                transition: all linear 0.6s;
+
+                &:hover {
+                    filter: grayscale(0)
+                }
+
+                padding: 5px 15px;
+                @media screen and (max-width: 480px) {
+                    padding: 0;
+                }
+                @media screen and (max-width: 360px) {
+                    padding: 0;
+                    width: 100px;
+                    height: 36px;
+                    background-size: 80%;
+                }
+            }
+
             .btn-kingpad {
-                filter: grayscale(1) brightness(0.50);
-            }
-        }
+                background-image: url(../../../assets/Png/menukingpad.png);
+                background-repeat: no-repeat;
+                background-size: 70%;
+                background-position: center center;
+                transition: all linear 0.6s;
+                padding: 5px 15px;
 
-        .btn-kingfloki {
-            background-image: url(../../../assets/Png/menukingfloki.png);
-            background-repeat: no-repeat;
-            background-size: 70%;
-            background-position: center center;
-            transition: all linear 0.6s;
-            &:hover {
-                filter: grayscale(0)
-            }
-            padding: 5px 15px;
+                &:hover {
+                    filter: grayscale(0)
+                }
+                @media screen and (max-width: 480px) {
+                    padding: 0;
+                }
 
-        }
-
-        .btn-kingland {
-            background-image: url(../../../assets/Png/menukingland.png);
-            background-repeat: no-repeat;
-            background-size: 70%;
-            background-position: center center;
-            transition: all linear 0.6s;
-            &:hover {
-                filter: grayscale(0)
+                @media screen and (max-width: 360px) {
+                    padding: 0;
+                    width: 100px;
+                    height: 36px;
+                    background-size: 80%;
+                }
             }
 
-            padding: 5px 15px;
+        }
+    }
+
+    .background-video-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .background-video {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
         }
 
-        .btn-kingpad {
-            background-image: url(../../../assets/Png/menukingpad.png);
-            background-repeat: no-repeat;
-            background-size: 70%;
-            background-position: center center;
-            transition: all linear 0.6s;
-            &:hover {
-                filter: grayscale(0)
+        .background-video-overlay {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .king-finance {
+                font-size: 7rem;
+                text-transform: 'uppercase';
+                letter-spacing: -1.27px;
+                text-transform: uppercase;
+                font-weight: 100;
+                font-family: "gothin-thin";
+                display: flex;
+                gap: 4px;
+
+                @media screen and (max-width: 1366px) {
+                    font-size: 6rem;
+                }
+
+                @media screen and (max-width: 1092px) {
+                    font-size: 5rem;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 4rem;
+                }
+
+                @media screen and (max-width: 540px) {
+                    font-size: 3rem;
+                }
+
+                @media screen and (max-width: 360px) {
+                    font-size: 2.5rem;
+                }
+
+                .king {
+                    font-family: "gotham-bold";
+                }
             }
-            padding: 5px 15px;
-        }
 
+            .king-finance-bottom {
+                font-size: 30px;
+
+                @media screen and (max-width: 1092px) {
+                    font-size: 25px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
 
-.background-video-section {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media screen and (max-width: 420px) {
-        
-    }
-
-    .background-video {
-        position: relative;
-        z-index: 0;
+.section-2 {
+    .about-king {
         width: 100%;
-        height: 100%;
-    }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 8rem;
 
-    .background-video-overlay {
-        position: absolute;
-        z-index: 1;
+        .king-details {
+            font-size: 20px;
+            letter-spacing: -0.21px;
+            line-height: 3rem;
+            width: 80%;
+            font-family: "gotham-thin";
+            text-align: left;
+
+            @media screen and (max-width: 960px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 640px) {
+                font-size: 14px;
+            }
+        }
+
+        .king-logo {
+            padding-top: 2rem;
+
+            .background-video {
+                @media screen and (max-width: 960px) {
+                    width: 80%;
+                }
+
+                @media screen and (max-width: 640px) {
+                    width: 60%;
+                }
+            }
+        }
+
+        .bold {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+
+.section-3 {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+    .background-svg {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: top center;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 5rem;
 
-        .king-finance {
-            font-size: 7rem;
-            text-transform: 'uppercase';
-            letter-spacing: -1.27px;
-            text-transform: uppercase;
-            font-weight: 100;
-            font-family: "gothin-thin";
-            display: flex;
-            gap: 4px;
+        .whole-system {
+            font-size: 30px;
+            font-family: 'gotham-thin';
+            margin-top: 4rem;
 
-            @media screen and (max-width: 1366px) {
-                font-size: 6rem;
+            @media screen and (max-width: 640px) {
+                font-size: 20px;
             }
 
-            @media screen and (max-width: 1092px) {
-                font-size: 5rem;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size: 4rem;
-            }
-
-            @media screen and (max-width: 540px) {
-                font-size: 3rem;
-            }
-
-            .king {
-                font-family: "gotham-bold";
+            .bold {
+                font-family: 'gotham-book';
+                font-weight: bold;
             }
         }
 
-        .king-finance-bottom {
-            font-size: 30px;
+        .king-logos {
+            display: flex;
+            gap: 7rem;
+            justify-content: center;
+            align-items: center;
 
-            @media screen and (max-width: 1092px) {
-                font-size: 25px;
+            @media screen and (max-width: 640px) {
+                gap: 4rem;
+            }
+
+            @media screen and (max-width: 480px) {
+                gap: 2rem;
+            }
+
+            .king-floki {
+                background-image: url(../../../assets/Png/kingfloki.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+                width: 120px;
+                height: 120px;
+
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .king-pad {
+                background-image: url(../../../assets/Png/kingpad.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+                width: 120px;
+                height: 120px;
+
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .king-land {
+                background-image: url(../../../assets/Png/kingland.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 120px;
+                height: 120px;
+
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+
+    .connect-btn-group {
+        .connect-with-king {
+            font-size: 20px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            letter-spacing: 2.6px;
+        }
+
+        .social-link-group {
+            display: flex;
+            gap: 2rem;
+
+            @media screen and (max-width: 480px) {
+                gap: 20px;
+            }
+
+            @media screen and (max-width: 360px) {
+                gap: 10px;
+            }
+
+            .social-box {
+                background: #272727 0% 0% no-repeat padding-box;
+                border-radius: 18px;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                @media screen and (max-width: 480px) {
+                    width: 50px;
+                    height: 50px;
+
+                }
+
+                @media screen and (max-width: 360px) {
+                    width: 45px;
+                    height: 45px;
+
+                    .social-icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
             }
         }
     }
 }
 
-.about-king {
-    width: 100%;
+.section-4 {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-top: 5rem;
+    align-items: center;
 
-    .king-details {
-        font-size: 20px;
-        letter-spacing: -0.21px;
-        line-height: 3rem;
-        width: 80%;
-        font-family: "gotham-thin";
-        text-align: left;
+    .container-4 {
+        width: 100%;
     }
 
-    .king-logo {
-        padding-top:2rem;
-    }
-    .bold {
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
+    .metaverse-section {
+        background-image: url(../../../assets/Png/boxbgkingfloki.png);
+        background-size: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 350px;
+
+        @media screen and (max-width: 840px) {}
     }
 }
