@@ -1,8 +1,14 @@
-import React, { useRef, useState } from "react"
-import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, Video1, Video2, KingFloki, KingPad, KingLand, BgMain, BgKingFloki, BgKingPad, BgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon } from "../../constants"
+import React, { useState, useEffect } from "react"
+import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, DeskVideo1, DeskVideo2, TabletVideo1, TabletVideo2, MobileVideo1, MobileVideo2, KingFloki, KingPad, KingLand, BgMain, BgKingFloki, BgKingPad, BgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon, DeskPlayearn, TabletPlayearn, MobilePlayearn, DeskNftGame, TabletNftGame, MobileNftGame, DeskBoxKingpad, MobileBoxKingPad, DeskBoxKingland, MobileBoxKingland, CmcIcon, CoingeckoIcon, BscscanIcon } from "../../constants"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import "./styles/index.scss"
 
 const HomePage = () => {
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+    }, [])
 
     const [bgSvg, setBgSvg] = useState(BgMain);
 
@@ -27,6 +33,10 @@ const HomePage = () => {
     return (
         <>
             <div className="section section-1">
+                <video className="mobile-background-video" loop autoPlay muted id="my-video" >
+                    <source src={MobileVideo1} type="video/mp4" id="background-video-source" />
+                    Your browser does not support the video tag.
+                </video>
                 <div className="container">
                     <div className="header">
                         <div className="logo">
@@ -60,10 +70,15 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="background-video-section">
-                        <video className="background-video" loop autoPlay muted id="my-video" >
-                            <source src={Video1} type="video/mp4" id="background-video-source" />
+                        <video className="desktop-background-video" loop autoPlay muted id="my-video" >
+                            <source src={DeskVideo1} type="video/mp4" id="background-video-source" />
                             Your browser does not support the video tag.
                         </video>
+                        <video className="tablet-background-video" loop autoPlay muted id="my-video" >
+                            <source src={TabletVideo1} type="video/mp4" id="background-video-source" />
+                            Your browser does not support the video tag.
+                        </video>
+
                         <div className="background-video-overlay">
                             <div className="king-finance" >
                                 <span style={{ fontFamily: 'gotham-bold' }}>King</span>
@@ -85,7 +100,7 @@ const HomePage = () => {
                         </div>
                         <div className="king-logo">
                             <video className="background-video" loop autoPlay muted id="my-video" >
-                                <source src={Video2} type="video/mp4" id="background-video-source" />
+                                <source src={DeskVideo2} type="video/mp4" id="background-video-source" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -95,6 +110,7 @@ const HomePage = () => {
 
             <div className="section section-3">
                 <div className="background-svg" style={{ backgroundImage: `url(${bgSvg})` }}>
+
                     <p className="whole-system">
                         <span className="bold">A coin </span>
                         to drive the
@@ -102,13 +118,13 @@ const HomePage = () => {
                     </p>
                     <div className="king-logos">
                         <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
-                            <img src={KingFloki} style={{ visibility: "hidden" }} />
+                            <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
                         </div>
                         <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
-                            <img src={KingPad} style={{ visibility: "hidden" }} />
+                            <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
                         </div>
                         <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
-                            <img src={KingLand} style={{ visibility: "hidden" }} />
+                            <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
                         </div>
                     </div>
                 </div>
@@ -138,9 +154,124 @@ const HomePage = () => {
             </div>
             <div className="section-4">
                 <div className="container container-4">
-                    <div className="metaverse-section">
-
+                    <div className="metaverse-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                        <div className="king-floki-logo" />
+                        <div className="metaverse-title">
+                            <div className="awesome-game">
+                                An awesome game in the
+                            </div>
+                            <div className="metaverse-letter">
+                                Metaverse
+                            </div>
+                            <button className="metaverse-play-button">
+                                Play Now
+                            </button>
+                        </div>
                     </div>
+                    <div className="game-section" >
+                        <div className="nft-game" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                            <img src={DeskNftGame} className="desktop-nft-game-gif" alt="nft-game-gif" />
+                            <img src={MobileNftGame} className="mobile-nft-game-gif" alt="nft-game-gif" />
+                            <div className="background-overlay">
+                                <div className="in-game-nfts" >
+                                    <div className="in-game">
+                                        In game
+                                    </div>
+                                    <div className="nfts">
+                                        NFTs
+                                    </div>
+                                </div>
+                                <button className="mint-button">
+                                    Mint Now
+                                </button>
+                            </div>
+                        </div>
+                        <div className="play-to-earn" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                            <video className="desktop-background-video" loop autoPlay muted id="my-video" >
+                                <source src={DeskPlayearn} type="video/mp4" id="background-video-source" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <video className="mobile-background-video" loop autoPlay muted id="my-video" >
+                                <source src={MobilePlayearn} type="video/mp4" id="background-video-source" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div className="background-overlay">
+                                <div className="to-earn" >
+                                    <div className="play-to">
+                                        Play to
+                                    </div>
+                                    <div className="earn">
+                                        EARN
+                                    </div>
+                                </div>
+                                <button className="play-button">
+                                    Play Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="kingpad-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                        <img src={DeskBoxKingpad} className="desktop-box-kingpad" alt="desktop-box-kingpad" />
+                        <img src={MobileBoxKingPad} className="mobile-box-kingpad" alt="mobile-box-kingpad" />
+                        <div className="background-overlay">
+                            <div className="kingpad-details">
+                                <div className="kingpad-logo">
+                                    <img src={KingPad} alt="king-pad" className="king-pad" />
+                                </div>
+                                <div className="safe-place">
+                                    <p>A safe place</p>
+                                    <p>to join the best.</p>
+                                </div>
+                                <button className="comming-soon">
+                                    COMMING SOON
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="kingland-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                        <img src={DeskBoxKingland} className="desktop-box-kingland" alt="desktop-box-kingland" />
+                        <img src={MobileBoxKingland} className="mobile-box-kingland" alt="mobile-box-kingland" />
+                        <div className="background-overlay">
+                            <div className="kingland-details">
+                                <div className="kingland-logo">
+                                    <img src={KingLand} alt="king-land" className="king-land" />
+                                </div>
+                                <div className="real-estate">
+                                    <p>Be the king of </p>
+                                    <p>your Real Estate</p>
+                                </div>
+                                <button className="comming-soon">
+                                    COMMING SOON
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div className="section-5">
+                <div className="container container-5">
+                    <div className="external-links">
+                        <div className="medium-link">
+                            <img src={CmcIcon} alt="medium-link-icon" className="link-icon" />
+                        </div>
+                        <div className="coingecko-link">
+                            <img src={CoingeckoIcon} alt="coingecko-link-icon" className="link-icon" />
+                        </div>
+                        <div className="bscscan-link">
+                            <img src={BscscanIcon} alt="bscscan-link-icon" className="link-icon" />
+                        </div>
+                    </div>
+                    <div className="external-buttons">
+                        <div className="token-button">Token</div>
+                        <div className="token-button">Team</div>
+                        <div className="token-button">Docs</div>
+                        <div className="token-button">Medium Kit</div>
+                        <div className="token-button">King Pass</div>
+                    </div>
+                    {/* <div className="footer">
+                        <img src={BgMain} alt="footer-background" className="footer-background" />
+                    </div> */}
                 </div>
             </div>
         </>
