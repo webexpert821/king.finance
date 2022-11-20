@@ -44,6 +44,9 @@ import CmcIconPng from "../assets/Desktop/Png/logocmc.png"
 import CoingeckoIconPng from '../assets/Desktop/Png/logocoingecko.png'
 import BscscanIconPng from '../assets/Desktop/Png/logobscscan.png'
 
+import DeskFooterLogoPng from "../assets/Desktop/Png/footerlogo.png";
+import TabletFooterLogoPng from "../assets/Tablet/Png/footerlogo.png";
+import MobileFooterLogoPng from "../assets/Mobile/Png/footerlogo.png";
 
 export const LogoHeader = LogoH
 
@@ -91,3 +94,6 @@ export const CmcIcon = CmcIconPng;
 export const CoingeckoIcon = CoingeckoIconPng;
 export const BscscanIcon = BscscanIconPng;
 
+export const DeskFooterLogo = DeskFooterLogoPng;
+export const TabletFooterLogo = TabletFooterLogoPng;
+export const MobileFooterLogo = MobileFooterLogoPng;

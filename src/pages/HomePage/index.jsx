@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, DeskVideo1, DeskVideo2, TabletVideo1, TabletVideo2, MobileVideo1, MobileVideo2, KingFloki, KingPad, KingLand, BgMain, BgKingFloki, BgKingPad, BgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon, DeskPlayearn, TabletPlayearn, MobilePlayearn, DeskNftGame, TabletNftGame, MobileNftGame, DeskBoxKingpad, MobileBoxKingPad, DeskBoxKingland, MobileBoxKingland, CmcIcon, CoingeckoIcon, BscscanIcon } from "../../constants"
+import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, DeskVideo1, DeskVideo2, TabletVideo1, TabletVideo2, MobileVideo1, MobileVideo2, KingFloki, KingPad, KingLand, BgMain, BgKingFloki, BgKingPad, BgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon, DeskPlayearn, TabletPlayearn, MobilePlayearn, DeskNftGame, TabletNftGame, MobileNftGame, DeskBoxKingpad, MobileBoxKingPad, DeskBoxKingland, MobileBoxKingland, CmcIcon, CoingeckoIcon, BscscanIcon, DeskFooterLogo, TabletFooterLogo, MobileFooterLogo } from "../../constants"
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import "./styles/index.scss"
@@ -10,26 +10,29 @@ const HomePage = () => {
         Aos.refresh();
     }, [])
 
-    const [bgSvg, setBgSvg] = useState(BgMain);
+    // const [bgSvg, setBgSvg] = useState(BgMain);
 
     const changeBg = (idx) => {
+        console.log("hover");
         switch (idx) {
             case 0:
-                setBgSvg(BgMain);
+                // setBgSvg("bgmain.png");
+                // document.documentElement.style.setProperty(`--text`, "bgmain.png");
+                // document.getElementsByClassName('section-3 background-svg').style;
+                document.getElementsByClassName('background-svg')[0].style.backgroudImage = 'url("../../../assets/Tablet/Png/bgkingfloki.png")';
                 break;
             case 1:
-                setBgSvg(BgKingFloki);
                 break;
             case 2:
-                setBgSvg(BgKingPad);
                 break;
             case 3:
-                setBgSvg(BgKingland);
                 break;
             default:
                 break;
         }
     }
+
+
     return (
         <>
             <div className="section section-1">
@@ -107,26 +110,25 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-
             <div className="section section-3">
-                <div className="background-svg" style={{ backgroundImage: `url(${bgSvg})` }}>
+                <div className="background-svg" >
 
                     <p className="whole-system">
                         <span className="bold">A coin </span>
                         to drive the
                         <span className="bold"> whole system</span>
                     </p>
-                    <div className="king-logos">
-                        <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
-                            <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
-                        </div>
-                        <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
-                            <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
-                        </div>
-                        <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
-                            <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
-                        </div>
+                    {/* <div className="king-logos"> */}
+                    <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
+                        <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
                     </div>
+                    <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
+                        <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
+                    </div>
+                    <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
+                        <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
+                    </div>
+                    {/* </div> */}
                 </div>
                 <div className="connect-btn-group">
                     <div className="connect-with-king">
@@ -154,7 +156,7 @@ const HomePage = () => {
             </div>
             <div className="section-4">
                 <div className="container container-4">
-                    <div className="metaverse-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                    <div className="metaverse-section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <div className="king-floki-logo" />
                         <div className="metaverse-title">
                             <div className="awesome-game">
@@ -169,7 +171,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="game-section" >
-                        <div className="nft-game" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                        <div className="nft-game" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                             <img src={DeskNftGame} className="desktop-nft-game-gif" alt="nft-game-gif" />
                             <img src={MobileNftGame} className="mobile-nft-game-gif" alt="nft-game-gif" />
                             <div className="background-overlay">
@@ -186,7 +188,7 @@ const HomePage = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="play-to-earn" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                        <div className="play-to-earn" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                             <video className="desktop-background-video" loop autoPlay muted id="my-video" >
                                 <source src={DeskPlayearn} type="video/mp4" id="background-video-source" />
                                 Your browser does not support the video tag.
@@ -210,7 +212,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="kingpad-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                    <div className="kingpad-section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <img src={DeskBoxKingpad} className="desktop-box-kingpad" alt="desktop-box-kingpad" />
                         <img src={MobileBoxKingPad} className="mobile-box-kingpad" alt="mobile-box-kingpad" />
                         <div className="background-overlay">
@@ -228,7 +230,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="kingland-section" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                    <div className="kingland-section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <img src={DeskBoxKingland} className="desktop-box-kingland" alt="desktop-box-kingland" />
                         <img src={MobileBoxKingland} className="mobile-box-kingland" alt="mobile-box-kingland" />
                         <div className="background-overlay">
@@ -269,9 +271,29 @@ const HomePage = () => {
                         <div className="token-button">Medium Kit</div>
                         <div className="token-button">King Pass</div>
                     </div>
-                    {/* <div className="footer">
-                        <img src={BgMain} alt="footer-background" className="footer-background" />
-                    </div> */}
+                </div>
+                <div className="footer">
+                    <div className="footer-container">
+                        <div className="king-logo">
+                            <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
+                            <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
+                            <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
+                        </div>
+                        <div className="copyright">
+                            <div className="cookie">Cookie preferences</div>
+                            <div className="line">|</div>
+                            <div className="privacy">Privacy Police</div>
+                            <div className="line">|</div>
+                            <div className="terms">Terms of use</div>
+                        </div>
+                        <div className="social-link-group">
+                            <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
+                            <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
+                            <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
+                            <img src={GithubIcon} className="social-icon" alt="github-icon" />
+                            <img src={MediumIcon} className="social-icon" alt="medium-icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
