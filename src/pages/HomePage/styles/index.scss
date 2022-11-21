@@ -169,6 +169,7 @@
                 transition: all linear 0.6s;
                 width: 125px;
                 height: 23px;
+
                 &:hover {
                     filter: grayscale(0)
                 }
@@ -199,6 +200,7 @@
                 transition: all linear 0.6s;
                 width: 125px;
                 height: 23px;
+
                 &:hover {
                     filter: grayscale(0)
                 }
@@ -229,6 +231,7 @@
                 padding: 12px 15px;
                 width: 125px;
                 height: 23px;
+
                 &:hover {
                     filter: grayscale(0)
                 }
@@ -434,12 +437,15 @@
         align-items: center;
         gap: 5rem;
         position: relative;
+
         @media screen and (max-width: 640px) {
             height: 280px;
         }
+
         @media screen and (max-width: 420px) {
             height: 200px;
         }
+
         .section-3-container {
             position: absolute;
             width: 100%;
@@ -1245,6 +1251,7 @@
             .token-button {
                 cursor: pointer;
             }
+
             @media screen and (max-width: 768px) {
                 flex-direction: column;
                 gap: 2.5rem;
@@ -1254,44 +1261,59 @@
     }
 
     .footer {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
         width: 100%;
-        height: 400px;
+        height: 100%;
         position: relative;
-        background-image: url(../../../assets/Desktop/Png/bgmain.png);
 
-        @media screen and (max-width: 1024px) {
-            background-image: url(../../../assets/Mobile/Png/bgmain.png);
-            height: 400px;
-            background-size: contain;
+        .desktop-footer-background {
+            display: block;
+
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
         }
 
-        .footer-container {
+        .tab-footer-background {
+            display: none;
+
+            @media screen and (max-width: 640px) {
+                display: block;
+            }
+        }
+
+        // .footer-container {
+        //     @media screen and (max-width: 1024px) {
+        //         height: 300px;
+        //     }
+
+        //     @media screen and (max-width: 768px) {
+        //         height: 260px;
+        //         justify-content: space-around;
+        //     }
+
+        //     @media screen and (max-width: 640px) {
+        //         height: 260px;
+        //         justify-content: inherit;
+        //         margin-top: 2rem;
+        //         gap: 2rem;
+        //     }
+        .footer-content {
             position: absolute;
+            top: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: center;
+            gap: 4rem;
             width: 100%;
-            height: 400px;
+            height: 100%;
 
-            @media screen and (max-width: 1024px) {
-                height: 300px;
-            }
-
-            @media screen and (max-width: 768px) {
-                height: 260px;
-                justify-content: space-around;
-            }
-
-            @media screen and (max-width: 640px) {
-                height: 260px;
-                justify-content: inherit;
-                margin-top: 2rem;
+            @media screen and (max-width: 960px) {
                 gap: 2rem;
-            }
+            }   
+            @media screen and (max-width: 640px) {
+                gap: 1.5rem;
+            }   
 
             .king-logo {
                 .desk-footer-logo {
@@ -1328,9 +1350,13 @@
                 font-size: 15px;
                 font-family: "gotham-book";
                 gap: 2rem;
-                .cookie, .privacy, .terms {
+
+                .cookie,
+                .privacy,
+                .terms {
                     cursor: pointer;
                 }
+
                 @media screen and (max-width: 640px) {
                     gap: 1rem;
                 }
@@ -1352,8 +1378,10 @@
                 @media screen and (max-width: 480px) {
                     gap: 2rem;
                 }
+
                 .social-icon {
                     cursor: pointer;
+
                     @media screen and (max-width: 480px) {
                         width: 20px;
                         height: 20px;
@@ -1362,4 +1390,6 @@
             }
         }
     }
+
+    // }
 }

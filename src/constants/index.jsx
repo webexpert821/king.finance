@@ -11,10 +11,13 @@ import TabletVideoBackground2 from "../assets/Tablet/Video/video2.mp4"
 import MobileVideoBackground1 from "../assets/Mobile/Video/video1.mp4"
 import MobileVideoBackground2 from "../assets/Mobile/Video/video2.mp4"
 
-import BgMainSvg from "../assets/Mobile/Png/bgmain.png"
-import BgKingFlokiSvg from "../assets/Mobile/Png/bgkingfloki.png"
-import BgKingLandSvg from "../assets/Mobile/Png/bgkingland.png"
-import BgKingPadSvg from "../assets/Mobile/Png/bgkingpad.png"
+import DeskBgMainSvg from "../assets/Desktop/Png/bgmain.png"
+import TabBgMainSvg from "../assets/Tablet/Png/bgmain.png"
+
+import MobBgMainSvg from "../assets/Mobile/Png/bgmain.png"
+import MobBgKingFlokiSvg from "../assets/Mobile/Png/bgkingfloki.png"
+import MobBgKingLandSvg from "../assets/Mobile/Png/bgkingland.png"
+import MobBgKingPadSvg from "../assets/Mobile/Png/bgkingpad.png"
 
 import KingFlokiPng from "../assets/Desktop/Png/kingfloki.png"
 import KingLandPng from "../assets/Desktop/Png/kingland.png"
@@ -61,10 +64,14 @@ export const TabletVideo2 = TabletVideoBackground2
 export const MobileVideo1 = MobileVideoBackground1
 export const MobileVideo2 = MobileVideoBackground2
 
-export const BgMain = BgMainSvg;
-export const BgKingFloki = BgKingFlokiSvg;
-export const BgKingland = BgKingLandSvg;
-export const BgKingPad = BgKingPadSvg;
+
+export const DeskBgMain = DeskBgMainSvg;
+export const TabBgMain = TabBgMainSvg;
+
+export const MobBgMain = MobBgMainSvg;
+export const MobBgKingFloki = MobBgKingFlokiSvg;
+export const MobBgKingland = MobBgKingLandSvg;
+export const MobBgKingPad = MobBgKingPadSvg;
 
 export const KingFloki = KingFlokiPng;
 export const KingLand = KingLandPng;

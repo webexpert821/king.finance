@@ -18,6 +18,10 @@ const SmoothScroll = ({ children }) => {
     rounded: 0,
   };
 
+  useEffect(() => {
+    setTimeout(setBodyHeight, 1000);
+  }, []);
+
   // 4.
   useEffect(() => {
     setTimeout(setBodyHeight, 1000);

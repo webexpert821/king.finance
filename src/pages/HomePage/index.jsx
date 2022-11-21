@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, DeskVideo1, DeskVideo2, TabletVideo1, TabletVideo2, MobileVideo1, MobileVideo2, KingFloki, KingPad, KingLand, BgMain, BgKingFloki, BgKingPad, BgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon, DeskPlayearn, TabletPlayearn, MobilePlayearn, DeskNftGame, TabletNftGame, MobileNftGame, DeskBoxKingpad, MobileBoxKingPad, DeskBoxKingland, MobileBoxKingland, CmcIcon, CoingeckoIcon, BscscanIcon, DeskFooterLogo, TabletFooterLogo, MobileFooterLogo } from "../../constants"
+import { LogoHeader, MenuKingfloki, MenuKingland, MenuKingpad, DeskVideo1, DeskVideo2, TabletVideo1, TabletVideo2, MobileVideo1, MobileVideo2, KingFloki, KingPad, KingLand, MobBgMain, MobBgKingFloki, MobBgKingPad, MobBgKingland, TelegramIcon, TwitterIcon, YoutubeIcon, GithubIcon, MediumIcon, DeskPlayearn, TabletPlayearn, MobilePlayearn, DeskNftGame, TabletNftGame, MobileNftGame, DeskBoxKingpad, MobileBoxKingPad, DeskBoxKingland, MobileBoxKingland, CmcIcon, CoingeckoIcon, BscscanIcon, DeskFooterLogo, TabletFooterLogo, MobileFooterLogo, TabBgMain, DeskBgMain } from "../../constants"
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import "./styles/index.scss"
@@ -10,22 +10,22 @@ const HomePage = () => {
         Aos.refresh();
     }, [])
 
-    const [bgSvg, setBgSvg] = useState(BgMain);
+    const [bgSvg, setBgSvg] = useState(MobBgMain);
 
     const changeBg = (idx) => {
         console.log("hover");
         switch (idx) {
             case 0:
-                setBgSvg(BgMain);
+                setBgSvg(MobBgMain);
                 break;
             case 1:
-                setBgSvg(BgKingFloki);
+                setBgSvg(MobBgKingFloki);
                 break;
             case 2:
-                setBgSvg(BgKingPad);
+                setBgSvg(MobBgKingPad);
                 break;
             case 3:
-                setBgSvg(BgKingland);
+                setBgSvg(MobBgKingland);
                 break;
             default:
                 break;
@@ -109,7 +109,7 @@ const HomePage = () => {
             </div>
             <div className="section section-3">
                 <div className="background-svg">
-                    <img src={bgSvg} alt="desktop-background-svg" style={{ width: "100%", height: "100%"}}/>
+                    <img src={bgSvg} alt="desktop-background-svg" style={{ width: "100%", height: "100%" }} />
                     {/* <img src={bgSvg} alt="mobile-background-svg" style={{ width: "100%", height: "100%"}}/> */}
                     <div className="section-3-container">
                         <p className="whole-system">
@@ -270,27 +270,52 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="footer">
-                    <div className="footer-container">
-                        <div className="king-logo">
-                            <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
-                            <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
-                            <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
+                    <img src={DeskBgMain} alt="footer-background" className="desktop-footer-background"  width="100%" height="100%" style={{ objectFit: "cover" }}/> 
+                    <img src={MobBgMain} alt="footer-background" className="tab-footer-background"  width="100%" height="100%" style={{ objectFit: "cover" }}/>
+                    <div className="footer-content">
+                            <div className="king-logo">
+                                <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
+                                <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
+                                <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
+                            </div>
+                            <div className="copyright">
+                                <div className="cookie">Cookie preferences</div>
+                                <div className="line">|</div>
+                                <div className="privacy">Privacy Police</div>
+                                <div className="line">|</div>
+                                <div className="terms">Terms of use</div>
+                            </div>
+                            <div className="social-link-group">
+                                <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
+                                <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
+                                <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
+                                <img src={GithubIcon} className="social-icon" alt="github-icon" />
+                                <img src={MediumIcon} className="social-icon" alt="medium-icon" />
+                            </div>
+                            </div>
+                    {/* <div className="footer-container">
+                        <div className="footer-content">
+                            <div className="king-logo">
+                                <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
+                                <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
+                                <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
+                            </div>
+                            <div className="copyright">
+                                <div className="cookie">Cookie preferences</div>
+                                <div className="line">|</div>
+                                <div className="privacy">Privacy Police</div>
+                                <div className="line">|</div>
+                                <div className="terms">Terms of use</div>
+                            </div>
+                            <div className="social-link-group">
+                                <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
+                                <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
+                                <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
+                                <img src={GithubIcon} className="social-icon" alt="github-icon" />
+                                <img src={MediumIcon} className="social-icon" alt="medium-icon" />
+                            </div>
                         </div>
-                        <div className="copyright">
-                            <div className="cookie">Cookie preferences</div>
-                            <div className="line">|</div>
-                            <div className="privacy">Privacy Police</div>
-                            <div className="line">|</div>
-                            <div className="terms">Terms of use</div>
-                        </div>
-                        <div className="social-link-group">
-                            <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
-                            <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
-                            <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
-                            <img src={GithubIcon} className="social-icon" alt="github-icon" />
-                            <img src={MediumIcon} className="social-icon" alt="medium-icon" />
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
