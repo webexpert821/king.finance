@@ -6,7 +6,7 @@ const StoreContext = createContext({});
 
 const StoreProvider = (props) => {
 
-    const [session, setSession] = useState("Rang Su Ki");
+    const [session, setSession] = useState("asdf");
     localStorageSet("temp", session);
 
     return (

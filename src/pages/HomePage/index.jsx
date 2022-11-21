@@ -10,22 +10,22 @@ const HomePage = () => {
         Aos.refresh();
     }, [])
 
-    // const [bgSvg, setBgSvg] = useState(BgMain);
+    const [bgSvg, setBgSvg] = useState(BgMain);
 
     const changeBg = (idx) => {
         console.log("hover");
         switch (idx) {
             case 0:
-                // setBgSvg("bgmain.png");
-                // document.documentElement.style.setProperty(`--text`, "bgmain.png");
-                // document.getElementsByClassName('section-3 background-svg').style;
-                document.getElementsByClassName('background-svg')[0].style.backgroudImage = 'url("../../../assets/Tablet/Png/bgkingfloki.png")';
+                setBgSvg(BgMain);
                 break;
             case 1:
+                setBgSvg(BgKingFloki);
                 break;
             case 2:
+                setBgSvg(BgKingPad);
                 break;
             case 3:
+                setBgSvg(BgKingland);
                 break;
             default:
                 break;
@@ -111,24 +111,27 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="section section-3">
-                <div className="background-svg" >
-
-                    <p className="whole-system">
-                        <span className="bold">A coin </span>
-                        to drive the
-                        <span className="bold"> whole system</span>
-                    </p>
-                    {/* <div className="king-logos"> */}
-                    <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
-                        <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
+                <div className="background-svg">
+                    <img src={bgSvg} alt="desktop-background-svg" style={{ width: "100%", height: "100%"}}/>
+                    {/* <img src={bgSvg} alt="mobile-background-svg" style={{ width: "100%", height: "100%"}}/> */}
+                    <div className="section-3-container">
+                        <p className="whole-system">
+                            <span className="bold">A coin </span>
+                            to drive the
+                            <span className="bold"> whole system</span>
+                        </p>
+                        <div className="king-logos">
+                            <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
+                                <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
+                            </div>
+                            <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
+                                <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
+                            </div>
+                            <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
+                                <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
+                            </div>
+                        </div>
                     </div>
-                    <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
-                        <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
-                    </div>
-                    <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
-                        <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
-                    </div>
-                    {/* </div> */}
                 </div>
                 <div className="connect-btn-group">
                     <div className="connect-with-king">
