@@ -123,24 +123,15 @@
                     letter-spacing: -0.14px;
                     color: #FFFFFF;
                     text-transform: uppercase;
-                    padding: 16px 32px;
                     font-weight: bolder;
                     border: none;
                     font-family: 'gotham-book';
-                    height: 47px;
-                    transition: all linear 0.3s;
-
+                    width: auto;
+                    padding: 16px 32px;
+                    height: 50px;
                     @media screen and (max-width: 640px) {
                         background: none;
                         padding: 10px;
-                    }
-
-                    // @media screen and (max-width: 1092px) {
-                    //     padding: 12px 24px;
-                    //     font-size: 14px;
-                    // }
-                    &:hover {
-                        color: rgb(156, 153, 153);
                     }
                 }
             }
@@ -1204,7 +1195,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 7rem;
 
     .container-5 {
         display: flex;
