@@ -20,10 +20,11 @@ const SmoothScroll = ({ children }) => {
 
   // 4.
   useEffect(() => {
-    setBodyHeight();
-  }, [windowSize.height]);
+    setTimeout(setBodyHeight, 100);
+  }, [windowSize]);
 
   const setBodyHeight = () => {
+    console.log("document.body.style.height: ", document.body.style.height)
     document.body.style.height = `${
       scrollingContainerRef.current.getBoundingClientRect().height
     }px`;
