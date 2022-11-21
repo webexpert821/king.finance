@@ -61,13 +61,10 @@ const HomePage = () => {
                             </div>
                             <div className="button-group">
                                 <div className="btn-kingfloki">
-                                    <img src={MenuKingfloki} style={{ visibility: "hidden" }} alt="king-floki" />
                                 </div>
                                 <div className="btn-kingland">
-                                    <img src={MenuKingland} style={{ visibility: "hidden" }} alt="king-land" />
                                 </div>
                                 <div className="btn-kingpad">
-                                    <img src={MenuKingpad} style={{ visibility: "hidden" }} alt="king-pad" />
                                 </div>
                             </div>
                         </div>
@@ -122,13 +119,10 @@ const HomePage = () => {
                         </p>
                         <div className="king-logos">
                             <div className="king-floki" onMouseOver={() => changeBg(1)} onMouseOut={() => changeBg(0)}>
-                                <img src={KingFloki} style={{ visibility: "hidden" }} alt="king-floki-logo" />
                             </div>
                             <div className="king-pad" onMouseOver={() => changeBg(2)} onMouseOut={() => changeBg(0)} >
-                                <img src={KingPad} style={{ visibility: "hidden" }} alt="king-flopadki-logo" />
                             </div>
                             <div className="king-land" onMouseOver={() => changeBg(3)} onMouseOut={() => changeBg(0)}>
-                                <img src={KingLand} style={{ visibility: "hidden" }} alt="king-land-logo" />
                             </div>
                         </div>
                     </div>
