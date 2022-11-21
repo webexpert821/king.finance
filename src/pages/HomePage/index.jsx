@@ -270,29 +270,29 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="footer">
-                    <img src={DeskBgMain} alt="footer-background" className="desktop-footer-background"  width="100%" height="100%" style={{ objectFit: "cover" }}/> 
-                    <img src={MobBgMain} alt="footer-background" className="tab-footer-background"  width="100%" height="100%" style={{ objectFit: "cover" }}/>
+                    <img src={DeskBgMain} alt="footer-background" className="desktop-footer-background" width="100%" height="100%" style={{ objectFit: "cover" }} />
+                    <img src={MobBgMain} alt="footer-background" className="tab-footer-background" width="100%" height="100%" style={{ objectFit: "cover" }} />
                     <div className="footer-content">
-                            <div className="king-logo">
-                                <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
-                                <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
-                                <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
-                            </div>
-                            <div className="copyright">
-                                <div className="cookie">Cookie preferences</div>
-                                <div className="line">|</div>
-                                <div className="privacy">Privacy Police</div>
-                                <div className="line">|</div>
-                                <div className="terms">Terms of use</div>
-                            </div>
-                            <div className="social-link-group">
-                                <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
-                                <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
-                                <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
-                                <img src={GithubIcon} className="social-icon" alt="github-icon" />
-                                <img src={MediumIcon} className="social-icon" alt="medium-icon" />
-                            </div>
-                            </div>
+                        <div className="king-logo">
+                            <img src={DeskFooterLogo} className="desk-footer-logo" alt="king-logo-png" />
+                            <img src={TabletFooterLogo} className="tablet-footer-logo" alt="king-logo-png" />
+                            <img src={MobileFooterLogo} className="mobile-footer-logo" alt="king-logo-png" />
+                        </div>
+                        <div className="copyright">
+                            <div className="cookie">Cookie preferences</div>
+                            <div className="line">|</div>
+                            <div className="privacy">Privacy Police</div>
+                            <div className="line">|</div>
+                            <div className="terms">Terms of use</div>
+                        </div>
+                        <div className="social-link-group">
+                            <img src={TelegramIcon} className="social-icon" alt="telegram-icon" />
+                            <img src={TwitterIcon} className="social-icon" alt="twitter-icon" />
+                            <img src={YoutubeIcon} className="social-icon" alt="youtube-icon" />
+                            <img src={GithubIcon} className="social-icon" alt="github-icon" />
+                            <img src={MediumIcon} className="social-icon" alt="medium-icon" />
+                        </div>
+                    </div>
                     {/* <div className="footer-container">
                         <div className="footer-content">
                             <div className="king-logo">

@@ -127,6 +127,7 @@
                     font-weight: bolder;
                     border: none;
                     font-family: 'gotham-book';
+                    height: 47px;
                     transition: all linear 0.3s;
 
                     @media screen and (max-width: 640px) {
@@ -351,13 +352,12 @@
 }
 
 .section-2 {
+    height: fit-content;
     .about-king {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 8rem;
-
         .king-details {
             font-size: 20px;
             letter-spacing: -0.21px;
@@ -399,7 +399,6 @@
 
 
 .section-3 {
-    padding-top: 10rem;
     display: flex;
     flex-direction: column;
 
@@ -409,17 +408,16 @@
     }
 
     @media screen and (max-width: 840px) {
-        padding-top: 5rem;
         justify-content: space-evenly;
     }
 
-    @media screen and (max-width: 640px) {
-        padding-top: 13.5rem;
-    }
+    // @media screen and (max-width: 640px) {
+    //     padding-top: 13.5rem;
+    // }
 
-    @media screen and (max-width: 360px) {
-        padding-top: 10rem;
-    }
+    // @media screen and (max-width: 360px) {
+    //     padding-top: 10rem;
+    // }
 
     // @media screen and (max-width: 340px) {
     //     padding-top: 24rem;
