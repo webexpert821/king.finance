@@ -1,8 +1,8 @@
 import LogoH from "../assets/Desktop/Png/logoheader.png"
 
-import MenuKingflokiPng from "../assets/Desktop/Png/menukingfloki.png"
-import MenuKinglandPng from "../assets/Desktop/Png/menukingland.png"
-import MenuKingpadPng from "../assets/Desktop/Png/menukingpad.png"
+import MenuKingflokiSvg from "../assets/Desktop/Svg/menukingfloki.svg"
+import MenuKinglandSvg from "../assets/Desktop/Svg/menukingland.svg"
+import MenuKingpadSvg from "../assets/Desktop/Svg/menukingpad.svg"
 
 import DeskVideoBackground1 from "../assets/Desktop/Video/video1.mp4"
 import DeskVideoBackground2 from "../assets/Desktop/Video/video2.mp4"
@@ -11,23 +11,23 @@ import TabletVideoBackground2 from "../assets/Tablet/Video/video2.mp4"
 import MobileVideoBackground1 from "../assets/Mobile/Video/video1.mp4"
 import MobileVideoBackground2 from "../assets/Mobile/Video/video2.mp4"
 
-import DeskBgMainSvg from "../assets/Desktop/Png/bgmain.png"
-import TabBgMainSvg from "../assets/Tablet/Png/bgmain.png"
+import DeskBgMainPng from "../assets/Desktop/Png/bgmain.png"
+import TabBgMainPng from "../assets/Tablet/Png/bgmain.png"
 
-import MobBgMainSvg from "../assets/Mobile/Png/bgmain.png"
-import MobBgKingFlokiSvg from "../assets/Mobile/Png/bgkingfloki.png"
-import MobBgKingLandSvg from "../assets/Mobile/Png/bgkingland.png"
-import MobBgKingPadSvg from "../assets/Mobile/Png/bgkingpad.png"
+import MobBgMainPng from "../assets/Desktop/Png/bgmain.png"
+import MobBgKingFlokiPng from "../assets/Desktop/Png/bgkingfloki.png"
+import MobBgKingLandPng from "../assets/Desktop/Png/bgkingland.png"
+import MobBgKingPadPng from "../assets/Desktop/Png/bgkingpad.png"
 
-import KingFlokiPng from "../assets/Desktop/Png/kingfloki.png"
-import KingLandPng from "../assets/Desktop/Png/kingland.png"
-import KingPadPng from "../assets/Desktop/Png/kingpad.png"
+import KingFlokiSvg from "../assets/Desktop/Svg/kingfloki.svg"
+import KingLandSvg from "../assets/Desktop/Svg/kingland.svg"
+import KingPadSvg from "../assets/Desktop/Svg/kingpad.svg"
 
-import TelegramPng from "../assets/Desktop/Png/iconboxtg.png"
-import TwitterPng from "../assets/Desktop/Png/iconboxtwitter.png"
-import YoutubePng from "../assets/Desktop/Png/iconboxyt.png"
-import GithubPng from "../assets/Desktop/Png/iconboxgithub.png"
-import MediumPng from "../assets/Desktop/Png/iconboxmedium.png"
+import TelegramSvg from "../assets/Desktop/Svg/iconboxtg.svg"
+import TwitterSvg from "../assets/Desktop/Svg/iconboxtwitter.svg"
+import YoutubeSvg from "../assets/Desktop/Svg/iconboxyt.svg"
+import GithubSvg from "../assets/Desktop/Svg/iconboxgithub.svg"
+import MediumSvg from "../assets/Desktop/Svg/iconboxmedium.svg"
 
 import DeskNftgameGif from "../assets/Desktop/Video/nftgamegif.gif"
 import TabletNftgameGif from "../assets/Tablet/Video/nftgamegif.gif"
@@ -47,15 +47,13 @@ import CmcIconPng from "../assets/Desktop/Png/logocmc.png"
 import CoingeckoIconPng from '../assets/Desktop/Png/logocoingecko.png'
 import BscscanIconPng from '../assets/Desktop/Png/logobscscan.png'
 
-import DeskFooterLogoPng from "../assets/Desktop/Png/footerlogo.png";
-import TabletFooterLogoPng from "../assets/Tablet/Png/footerlogo.png";
-import MobileFooterLogoPng from "../assets/Mobile/Png/footerlogo.png";
+import DeskFooterLogoSvg from "../assets/Desktop/Svg/footerlogo.svg";
 
 export const LogoHeader = LogoH
 
-export const MenuKingfloki = MenuKingflokiPng
-export const MenuKingland = MenuKinglandPng
-export const MenuKingpad = MenuKingpadPng
+export const MenuKingfloki = MenuKingflokiSvg
+export const MenuKingland = MenuKinglandSvg
+export const MenuKingpad = MenuKingpadSvg
 
 export const DeskVideo1 = DeskVideoBackground1
 export const DeskVideo2 = DeskVideoBackground2
@@ -65,23 +63,23 @@ export const MobileVideo1 = MobileVideoBackground1
 export const MobileVideo2 = MobileVideoBackground2
 
 
-export const DeskBgMain = DeskBgMainSvg;
-export const TabBgMain = TabBgMainSvg;
+export const DeskBgMain = DeskBgMainPng;
+export const TabBgMain = TabBgMainPng;
 
-export const MobBgMain = MobBgMainSvg;
-export const MobBgKingFloki = MobBgKingFlokiSvg;
-export const MobBgKingland = MobBgKingLandSvg;
-export const MobBgKingPad = MobBgKingPadSvg;
+export const MobBgMain = MobBgMainPng;
+export const MobBgKingFloki = MobBgKingFlokiPng;
+export const MobBgKingland = MobBgKingLandPng;
+export const MobBgKingPad = MobBgKingPadPng;
 
-export const KingFloki = KingFlokiPng;
-export const KingLand = KingLandPng;
-export const KingPad = KingPadPng;
+export const KingFloki = KingFlokiSvg;
+export const KingLand = KingLandSvg;
+export const KingPad = KingPadSvg;
 
-export const TelegramIcon = TelegramPng;
-export const TwitterIcon = TwitterPng;
-export const YoutubeIcon = YoutubePng;
-export const GithubIcon = GithubPng;
-export const MediumIcon = MediumPng;
+export const TelegramIcon = TelegramSvg;
+export const TwitterIcon = TwitterSvg;
+export const YoutubeIcon = YoutubeSvg;
+export const GithubIcon = GithubSvg;
+export const MediumIcon = MediumSvg;
 
 export const DeskNftGame =  DeskNftgameGif
 export const TabletNftGame =  TabletNftgameGif
@@ -101,6 +99,4 @@ export const CmcIcon = CmcIconPng;
 export const CoingeckoIcon = CoingeckoIconPng;
 export const BscscanIcon = BscscanIconPng;
 
-export const DeskFooterLogo = DeskFooterLogoPng;
-export const TabletFooterLogo = TabletFooterLogoPng;
-export const MobileFooterLogo = MobileFooterLogoPng;
+export const DeskFooterLogo = DeskFooterLogoSvg;

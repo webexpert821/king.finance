@@ -129,6 +129,10 @@
                     width: auto;
                     padding: 16px 32px;
                     height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
                     @media screen and (max-width: 640px) {
                         background: none;
                         padding: 10px;
@@ -154,7 +158,7 @@
             }
 
             .btn-kingfloki {
-                background-image: url(../../../assets/Desktop/Png/menukingfloki.png);
+                background-image: url(../../../assets/Desktop/Svg/menukingfloki.svg);
                 background-repeat: no-repeat;
                 background-size: 70%;
                 background-position: center center;
@@ -185,7 +189,7 @@
             }
 
             .btn-kingland {
-                background-image: url(../../../assets/Desktop/Png/menukingland.png);
+                background-image: url(../../../assets/Desktop/Svg/menukingland.svg);
                 background-repeat: no-repeat;
                 background-size: 70%;
                 background-position: center center;
@@ -215,7 +219,7 @@
             }
 
             .btn-kingpad {
-                background-image: url(../../../assets/Desktop/Png/menukingpad.png);
+                background-image: url(../../../assets/Desktop/Svg/menukingpad.svg);
                 background-repeat: no-repeat;
                 background-size: 70%;
                 background-position: center center;
@@ -325,6 +329,7 @@
 
             .king-finance-bottom {
                 font-size: 30px;
+                font-family: "gotham-book";
 
                 @media screen and (max-width: 1092px) {
                     font-size: 25px;
@@ -344,11 +349,13 @@
 
 .section-2 {
     height: fit-content;
+
     .about-king {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
+
         .king-details {
             font-size: 20px;
             letter-spacing: -0.21px;
@@ -482,18 +489,12 @@
                 }
 
                 .king-floki {
-                    background-image: url(../../../assets/Desktop/Png/kingfloki.png);
+                    background-image: url(../../../assets/Desktop/Svg/kingfloki.svg);
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-position: center center;
                     width: 120px;
                     height: 120px;
-
-                    :hover {
-                        .background-svg {
-                            background-image: url(../../../assets/Desktop/Png/boxbgkingfloki.png);
-                        }
-                    }
 
                     @media screen and (max-width: 640px) {
                         width: 80px;
@@ -507,7 +508,7 @@
                 }
 
                 .king-pad {
-                    background-image: url(../../../assets/Desktop/Png/kingpad.png);
+                    background-image: url(../../../assets/Desktop/Svg/boxkingpad.svg);
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-position: center center;
@@ -526,7 +527,7 @@
                 }
 
                 .king-land {
-                    background-image: url(../../../assets/Desktop/Png/kingland.png);
+                    background-image: url(../../../assets/Desktop/Svg/kingland.svg);
                     background-size: 100%;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -562,6 +563,7 @@
             align-items: center;
             gap: 3rem;
             letter-spacing: 2.6px;
+            font-family: "gotham-book";
         }
 
         .social-link-group {
@@ -600,6 +602,19 @@
                         width: 20px;
                         height: 20px;
                     }
+                }
+
+                .social-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .social-box:hover {
+                background-color: #FFFFFF;
+
+                .social-icon {
+                    color: #272727;
                 }
             }
         }
@@ -680,7 +695,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 5px;
+            gap: 0.5rem;
             position: absolute;
             top: 4rem;
             right: 11rem;
@@ -704,9 +719,10 @@
             }
 
             .metaverse-letter {
-                font-size: 50px;
+                font-size: 3.5rem;
                 text-transform: uppercase;
                 font-family: "gotham-bold";
+                font-weight: bold;
                 letter-spacing: 0.5px;
 
                 @media screen and (max-width: 480px) {
@@ -715,19 +731,29 @@
             }
 
             .metaverse-play-button {
-                background: #1D1D1D 0% 0% no-repeat padding-box;
+                background: #191919 0% 0% no-repeat padding-box;
                 border-radius: 31px;
-                padding: 16px 24px;
                 border: none;
-                text-transform: uppercase;
-                font-family: 'gotham-book';
-                transition: all linear 0.3s;
-                color: #fff;
+                padding: 18px 24px;
                 font-family: "gotham-bold";
-                margin-top: 1.5rem;
+                font-size: 20px;
+                transition: all linear 0.3s;
+                text-transform: uppercase;
+                margin-top:1rem;
+                color: #fff;
 
                 &:hover {
                     color: rgb(156, 153, 153);
+                }
+
+                @media screen and (max-width: 1024px) {
+                    padding: 10px 12px;
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 640px) {
+                    padding: 10px 12px;
+                    font-size: 15px;
                 }
             }
         }
@@ -799,7 +825,7 @@
                     .nfts {
                         margin-top: 0.5rem;
                         font-family: "gotham-bold";
-                        font-size: 4.5rem;
+                        font-size: 5rem;
 
                         @media screen and (max-width: 768px) {
                             font-size: 2.5rem;
@@ -893,7 +919,7 @@
                     .earn {
                         margin-top: 0.5rem;
                         font-family: "gotham-bold";
-                        font-size: 4.5rem;
+                        font-size: 5rem;
 
                         @media screen and (max-width: 768px) {
                             font-size: 2.5rem;
@@ -940,6 +966,7 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         @media screen and (max-width: 640px) {
             justify-content: center;
@@ -1016,6 +1043,7 @@
                             width: 80px;
                             height: 80px;
                         }
+
                         @media screen and (max-width: 840px) {
                             width: 60px;
                             height: 60px;
@@ -1059,6 +1087,7 @@
                     color: #fff;
                     border: none;
                     text-transform: uppercase;
+                    margin-top:3px;
 
                     &:hover {
                         color: rgb(156, 153, 153);
@@ -1168,6 +1197,7 @@
                             width: 80px;
                             height: 80px;
                         }
+
                         @media screen and (max-width: 840px) {
                             width: 60px;
                             height: 60px;
@@ -1277,7 +1307,7 @@
         }
 
         .external-buttons {
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -1298,41 +1328,26 @@
 
     .footer {
         width: 100%;
-        height: 100%;
+        height: 450px;
         position: relative;
 
-        .desktop-footer-background {
-            display: block;
+        @media screen and (max-width: 1280px) {
+            height: 350px;
+        }
 
+        @media screen and (max-width: 960px) {
+            height: 300px;
+        }
+
+        .footer-background {
+            width: 100%;
+            height: 100%;
             @media screen and (max-width: 640px) {
-                display: none;
+                height: 60%;
             }
         }
 
-        .tab-footer-background {
-            display: none;
 
-            @media screen and (max-width: 640px) {
-                display: block;
-            }
-        }
-
-        // .footer-container {
-        //     @media screen and (max-width: 1024px) {
-        //         height: 300px;
-        //     }
-
-        //     @media screen and (max-width: 768px) {
-        //         height: 260px;
-        //         justify-content: space-around;
-        //     }
-
-        //     @media screen and (max-width: 640px) {
-        //         height: 260px;
-        //         justify-content: inherit;
-        //         margin-top: 2rem;
-        //         gap: 2rem;
-        //     }
         .footer-content {
             position: absolute;
             top: 0;
@@ -1346,39 +1361,50 @@
 
             @media screen and (max-width: 960px) {
                 gap: 2rem;
-            }   
+            }
+
             @media screen and (max-width: 640px) {
                 gap: 1.5rem;
-            }   
+            }
 
             .king-logo {
                 .desk-footer-logo {
-                    display: block;
-
+                    width: 100px;
+                    height: 100px;
                     @media screen and (max-width: 1024px) {
-                        display: none;
+                        width: 80px;
+                        height: 80px;
                     }
-                }
-
-                .tablet-footer-logo {
-                    display: none;
-
-                    @media screen and (max-width: 1024px) {
-                        display: block;
-                    }
-
                     @media screen and (max-width: 640px) {
-                        display: none;
+                        width: 60px;
+                        height: 60px;
                     }
+                    // display: block;
+
+                    // @media screen and (max-width: 1024px) {
+                    //     display: none;
+                    // }
                 }
 
-                .mobile-footer-logo {
-                    display: none;
+                // .tablet-footer-logo {
+                //     display: none;
 
-                    @media screen and (max-width: 640px) {
-                        display: block;
-                    }
-                }
+                //     @media screen and (max-width: 1024px) {
+                //         display: block;
+                //     }
+
+                //     @media screen and (max-width: 640px) {
+                //         display: none;
+                //     }
+                // }
+
+                // .mobile-footer-logo {
+                //     display: none;
+
+                //     @media screen and (max-width: 640px) {
+                //         display: block;
+                //     }
+                // }
             }
 
             .copyright {
@@ -1417,7 +1443,8 @@
 
                 .social-icon {
                     cursor: pointer;
-
+                    width: 24px;
+                    height: 24px;
                     @media screen and (max-width: 480px) {
                         width: 20px;
                         height: 20px;
