@@ -1,4 +1,4 @@
-import LogoH from "../assets/Desktop/Png/logoheader.png"
+import LogoH from "../assets/Desktop/Svg/logoheader.svg"
 
 import MenuKingflokiSvg from "../assets/Desktop/Svg/menukingfloki.svg"
 import MenuKinglandSvg from "../assets/Desktop/Svg/menukingland.svg"
