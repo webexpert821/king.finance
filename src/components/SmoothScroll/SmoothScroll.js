@@ -12,7 +12,7 @@ const SmoothScroll = ({ children }) => {
 
   // 3.
   const data = {
-    ease: 0.06,
+    ease: 0.01,
     current: 0,
     previous: 100,
     rounded: 0,
