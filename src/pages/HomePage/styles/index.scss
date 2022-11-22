@@ -393,12 +393,8 @@
       padding-top: 2.5rem;
 
       .background-video {
-        @media screen and (max-width: 960px) {
-          width: 80%;
-        }
-
         @media screen and (max-width: 400px) {
-          width: 60%;
+          width: 80%;
           padding-top: 0;
         }
       }
@@ -418,11 +414,11 @@
 
   @media screen and (max-width: 960px) {
     padding-top: 0rem;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 
   @media screen and (max-width: 840px) {
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 
   @media screen and (max-height: 420px) {
