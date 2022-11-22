@@ -118,9 +118,11 @@
                 gap: 10px;
 
                 .rect-button {
-                    background: red;
+                    background: #1D1D1D;
                     border-radius: 28px;
                     letter-spacing: -0.14px;
+                    -webkit-text-fill-color: rgba(255, 255, 255, 1); 
+                    -webkit-opacity: 1;
                     color: #FFFFFF;
                     text-transform: uppercase;
                     font-weight: bolder;
@@ -133,10 +135,10 @@
                     justify-content: center;
                     align-items: center;
 
-                    // @media screen and (max-width: 640px) {
-                    //     background: none;
-                    //     padding: 10px;
-                    // }
+                    @media screen and (max-width: 640px) {
+                        background: none;
+                        padding: 10px;
+                    }
                 }
             }
         }
