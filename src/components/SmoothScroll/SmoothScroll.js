@@ -12,7 +12,7 @@ const SmoothScroll = ({ children }) => {
 
   // 3.
   const data = {
-    ease: 0.01,
+    ease: 0.25,
     current: 0,
     previous: 100,
     rounded: 0,
@@ -28,7 +28,7 @@ const SmoothScroll = ({ children }) => {
   }, [windowSize]);
 
   const setBodyHeight = () => {
-    console.log("document.body.style.height: ", document.body.style.height)
+    console.log("document.body.style.height: ", document.body.style.height);
     document.body.style.height = `${
       scrollingContainerRef.current.getBoundingClientRect().height
     }px`;
@@ -50,7 +50,7 @@ const SmoothScroll = ({ children }) => {
   };
 
   return (
-    <div className="parent" >
+    <div className="parent">
       <div ref={scrollingContainerRef}>{children}</div>
     </div>
   );
