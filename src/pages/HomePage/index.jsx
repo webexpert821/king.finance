@@ -129,7 +129,7 @@ const HomePage = () => {
                 </div>
                 <div className="connect-btn-group">
                     <div className="connect-with-king">
-                        <p>Connect With King</p>
+                        <div>Connect With King</div>
                         <div className="social-link-group">
                             <div className="social-box">
                                 <svg className="social-icon" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.83 21.47" fill="currentColor">
