@@ -439,7 +439,7 @@
 
   .background-svg {
     width: 100%;
-    height: 400px;
+    height: 450px;
     // background-repeat: no-repeat;
     // background-size: contain;
     // background-position: top center;
@@ -458,22 +458,40 @@
       height: 200px;
     }
 
-    .section-3-container {
-      position: absolute;
+    .desktop-background-svg {
       width: 100%;
       height: 100%;
+    }
+
+    .section-3-container {
+      // position: absolute;
+      // width: 100%;
+      // height: 100%;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // gap: 4rem;
+      position: absolute;
+      top: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       gap: 4rem;
+      width: 100%;
+      height: 100%;
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 960px) {
         gap: 2rem;
       }
 
+      @media screen and (max-width: 640px) {
+        gap: 1.5rem;
+      }
+
       .whole-system {
-        font-size: 30px;
+        font-size: 25px;
         font-family: "gotham-thin";
 
         @media screen and (max-width: 640px) {

@@ -195,9 +195,8 @@ const HomePage = () => {
           <img
             src={bgSvg}
             alt="desktop-background-svg"
-            style={{ width: "100%", height: "100%" }}
+            className="desktop-background-svg"
           />
-          {/* <img src={bgSvg} alt="mobile-background-svg" style={{ width: "100%", height: "100%"}}/> */}
           <div className="section-3-container">
             <p className="whole-system">
               <span className="bold">A coin </span>
