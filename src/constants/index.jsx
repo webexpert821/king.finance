@@ -43,9 +43,9 @@ import MobileBoxKingPadPng from "../assets/Mobile/Png/bg_box_kingpad.png"
 import DeskBoxKingLandPng from "../assets/Desktop/Png/boxbgkingland.png"
 import MobileBoxKingLandPng from "../assets/Mobile/Png/bg_box_kingland.png"
 
-import CmcIconPng from "../assets/Desktop/Png/logocmc.png"
-import CoingeckoIconPng from '../assets/Desktop/Png/logocoingecko.png'
-import BscscanIconPng from '../assets/Desktop/Png/logobscscan.png'
+import CmcIconSvg from "../assets/Desktop/Svg/logocmc.svg"
+import CoingeckoIconSvg from '../assets/Desktop/Svg/logocoingecko.svg'
+import BscscanIconSvg from '../assets/Desktop/Svg/logobscscan.svg'
 
 import DeskFooterLogoSvg from "../assets/Desktop/Svg/footerlogo.svg";
 
@@ -95,8 +95,8 @@ export const MobileBoxKingPad = MobileBoxKingPadPng;
 export const DeskBoxKingland = DeskBoxKingLandPng;
 export const MobileBoxKingland = MobileBoxKingLandPng;
 
-export const CmcIcon = CmcIconPng;
-export const CoingeckoIcon = CoingeckoIconPng;
-export const BscscanIcon = BscscanIconPng;
+export const CmcIcon = CmcIconSvg;
+export const CoingeckoIcon = CoingeckoIconSvg;
+export const BscscanIcon = BscscanIconSvg;
 
 export const DeskFooterLogo = DeskFooterLogoSvg;
