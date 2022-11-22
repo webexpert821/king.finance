@@ -12,7 +12,7 @@ const SmoothScroll = ({ children }) => {
 
   // 3.
   const data = {
-    ease: 0.252525,
+    ease: 0.1,
     current: 0,
     previous: 0,
     rounded: 0,
@@ -50,9 +50,9 @@ const SmoothScroll = ({ children }) => {
   };
 
   return (
-    <div className="parent">
+    <main className="parent">
       <div ref={scrollingContainerRef}>{children}</div>
-    </div>
+    </main>
   );
 };
 
