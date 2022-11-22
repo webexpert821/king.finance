@@ -128,7 +128,7 @@
         display: -ms-flex;
         display: flex;
         gap: 10px;
-        font-family: "gotham-book";
+        font-family: "gotham-bold";
 
         .rect-button {
           background: #1d1d1d;
@@ -137,7 +137,6 @@
           color: #ffffff;
           -webkit-text-fill-color: #ffffff;
           text-transform: uppercase;
-          font-weight: bolder;
           border: none;
           padding: 0px 18px;
           height: 47px;
