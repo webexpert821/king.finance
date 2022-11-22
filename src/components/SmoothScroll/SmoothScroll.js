@@ -12,19 +12,19 @@ const SmoothScroll = ({ children }) => {
 
   // 3.
   const data = {
-    ease: 0.04,
+    ease: 0.06,
     current: 0,
     previous: 100,
     rounded: 0,
   };
 
   useEffect(() => {
-    setTimeout(setBodyHeight, 1000);
+    setTimeout(setBodyHeight, 500);
   }, []);
 
   // 4.
   useEffect(() => {
-    setTimeout(setBodyHeight, 1000);
+    setTimeout(setBodyHeight, 500);
   }, [windowSize]);
 
   const setBodyHeight = () => {
