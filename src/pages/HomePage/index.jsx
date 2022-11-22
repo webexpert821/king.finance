@@ -516,7 +516,7 @@ const HomePage = () => {
             <div className="token-button">Token</div>
             <div className="token-button">Team</div>
             <div className="token-button">Docs</div>
-            <div className="token-button">Media Kit with COMING</div>
+            <div className="token-button">Media Kit</div>
             <div className="token-button">King Pass</div>
           </div>
         </div>
