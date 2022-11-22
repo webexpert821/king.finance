@@ -51,7 +51,7 @@ const HomePage = () => {
                                     <img src={LogoHeader} alt="mobile-header-logo" className="mobile-logo-img" />
                                 </div>
                                 <div className="rect-buttons">
-                                    <button >
+                                    <button className="rect-button docs">
                                         Docs
                                     </button>
                                     <button className="rect-button staking">
