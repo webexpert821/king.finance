@@ -51,7 +51,7 @@ const HomePage = () => {
                                     <img src={LogoHeader} alt="mobile-header-logo" className="mobile-logo-img" />
                                 </div>
                                 <div className="rect-buttons">
-                                    <button className="rect-button docs">
+                                    <button >
                                         Docs
                                     </button>
                                     <button className="rect-button staking">
@@ -77,7 +77,7 @@ const HomePage = () => {
                         <video className="tablet-background-video" playsInline loop autoPlay muted id="my-video" >
                             <source src={TabletVideo1} type="video/mp4" id="background-video-source" />
                             Your browser does not support the video tag.
-                        </video>
+                        </video>    
 
                         <div className="background-video-overlay">
                             <div className="king-finance" >
