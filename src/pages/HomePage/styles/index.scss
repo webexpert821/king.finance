@@ -1,6 +1,9 @@
 .container {
   max-width: 1160px;
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   position: relative;
 
   @media screen and (max-width: 1366px) {
@@ -56,8 +59,12 @@
 
   .header {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     width: 100%;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     position: absolute;
     top: 0;
     gap: 3rem;
@@ -65,6 +72,7 @@
 
     @media screen and (max-width: 640px) {
       justify-content: center;
+      -webkit-justify-content: center;
       gap: 0;
     }
 
@@ -85,6 +93,7 @@
     display: -ms-flex;
     display: flex;
     align-items: center;
+    -webkit-align-items: center;
     gap: 10px;
 
     @media screen and (max-width: 960px) {
@@ -93,7 +102,7 @@
       flex-wrap: wrap;
       -webkit-flex-direction: column;
       align-items: flex-end;
-      -webkit-aligm-items: flex-end;
+      -webkit-align-items: flex-end;
     }
 
     .rect-buttons-group {
@@ -102,8 +111,10 @@
       display: -ms-flex;
       display: flex;
       align-items: center;
+      -webkit-align-items: center;
       // gap: 10px;
       justify-content: end;
+      -webkit-justify-content: end;
       width: 100%;
       min-width: 1px;
 
@@ -113,6 +124,7 @@
 
       @media screen and (max-width: 640px) {
         justify-content: space-between;
+        -webkit-justify-content: space-between;
       }
 
       .mobile-logo {
@@ -167,7 +179,11 @@
 
     .button-group {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       align-items: center;
+      -webkit-align-items: center;
       cursor: pointer;
       background: #1d1d1d 0% 0% no-repeat padding-box;
       border-radius: 31px;
@@ -276,8 +292,13 @@
     width: 100%;
     height: auto;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
 
     .desktop-background-video {
       position: relative;
@@ -311,7 +332,12 @@
       position: absolute;
       z-index: 1;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
+
       gap: 1rem;
 
       .king-finance {
@@ -322,6 +348,9 @@
         font-weight: 100;
         font-family: "gothin-thin";
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         gap: 4px;
 
         @media screen and (max-width: 1366px) {
@@ -375,8 +404,12 @@
   .about-king {
     width: 100%;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     align-items: center;
     flex-direction: column;
+    -webkit-flex-direction: column;
 
     .king-details {
       font-size: 20px;
@@ -419,16 +452,22 @@
 
 .section-3 {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   gap: 2rem;
 
   @media screen and (max-width: 960px) {
     padding-top: 0rem;
     justify-content: flex-start;
+    -webkit-justify-content: flex-start;
   }
 
   @media screen and (max-width: 840px) {
     justify-content: flex-start;
+    -webkit-justify-content: flex-start;
   }
 
   @media screen and (max-height: 420px) {
@@ -454,8 +493,13 @@
     // background-size: contain;
     // background-position: top center;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
     gap: 5rem;
     position: relative;
@@ -485,9 +529,14 @@
       position: absolute;
       top: 0;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center;
       justify-content: center;
+      -webkit-justify-content: center;
       gap: 4rem;
       width: 100%;
       height: 100%;
@@ -520,9 +569,14 @@
 
       .king-logos {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         gap: 7rem;
         justify-content: center;
+        -webkit-justify-content: center;
         align-items: center;
+        -webkit-align-items: center;
 
         @media screen and (max-width: 640px) {
           gap: 4rem;
@@ -640,8 +694,13 @@
         width: 60px;
         height: 60px;
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         justify-content: center;
+        -webkit-justify-content: center;
         align-items: center;
+        -webkit-align-items: center;
         cursor: pointer;
 
         @media screen and (max-width: 480px) {
@@ -689,8 +748,13 @@
   .container-4 {
     width: 100%;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-content: space-between;
+    -webkit-align-content: space-between;
     gap: 1rem;
   }
 
@@ -712,8 +776,13 @@
 
     @media screen and (max-width: 640px) {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center;
+      -webkit-aligm-items: center;
       height: 250px;
     }
 
@@ -751,8 +820,13 @@
 
     .metaverse-title {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center;
+      -webkit-align-items: center;
       gap: 0.5rem;
       position: absolute;
       top: 4rem;
@@ -819,7 +893,11 @@
 
   .game-section {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     gap: 1rem;
 
     // @media screen and (max-width: 480px) {
@@ -828,8 +906,13 @@
     .nft-game {
       position: relative;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       align-items: center;
+      -webkit-align-items: center;
       justify-content: center;
+      -webkit-justify-content: center;
 
       @media screen and (max-width: 768px) {
         width: 300px;
@@ -861,9 +944,15 @@
         height: 90%;
         z-index: 1;
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
         align-items: center;
+        -webkit-align-items: center;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         gap: 1rem;
 
         .in-game-nfts {
@@ -922,8 +1011,13 @@
     .play-to-earn {
       position: relative;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       align-items: center;
+      -webkit-align-items: center;
       justify-content: center;
+      -webkit-justify-content: center;
 
       @media screen and (max-width: 768px) {
         width: 300px;
@@ -956,9 +1050,15 @@
         height: 90%;
         z-index: 1;
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
         align-items: center;
+        -webkit-align-items: center;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         gap: 1rem;
 
         .to-earn {
@@ -1024,11 +1124,18 @@
     border-radius: 50px;
     position: relative;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
     align-items: center;
+    -webkit-align-items: center;
 
     @media screen and (max-width: 640px) {
       justify-content: center;
+      -webkit-justify-content: center;
     }
 
     .desktop-box-kingpad {
@@ -1057,9 +1164,15 @@
       width: 100%;
       height: 100%;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: center;
+      -webkit-justify-content: center;
       align-items: flex-end;
+      -webkit-align-items: flex-end;
       margin-right: 5rem;
       gap: 1rem;
       top: 0;
@@ -1068,14 +1181,21 @@
       @media screen and (max-width: 640px) {
         margin-right: 0;
         justify-content: flex-start;
+        -webkit-justify-content: flex-start;
         margin-top: 1.5rem;
         align-items: center;
+        -webkit-align-items: center;
       }
 
       .kingpad-details {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
         align-items: flex-start;
+        -webkit-align-items: flex-start;
         gap: 2rem;
 
         @media screen and (max-width: 1366px) {
@@ -1110,8 +1230,13 @@
 
         .safe-place {
           display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
           flex-direction: column;
+          -webkit-flex-direction: column;
           align-items: flex-start;
+          -webkit-align-items: flex-start;
           gap: 0.5rem;
 
           @media screen and (max-width: 1366px) {
@@ -1125,11 +1250,13 @@
 
           @media screen and (max-width: 640px) {
             flex-direction: row;
+            -webkit-flex-direction: row;
             margin-top: 0;
           }
 
           @media screen and (max-width: 480px) {
             flex-direction: row;
+            -webkit-flex-direction: row;
             font-size: 15px;
           }
         }
@@ -1177,10 +1304,15 @@
     border-radius: 50px;
     position: relative;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 
     @media screen and (max-width: 640px) {
       justify-content: center;
+      -webkit-justify-content: center;
     }
 
     .desktop-box-kingland {
@@ -1209,9 +1341,15 @@
       width: 100%;
       height: 100%;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: center;
+      -webkit-justify-content: center;
       align-items: flex-end;
+      -webkit-align-items: flex-end;
       margin-right: 5rem;
       gap: 1rem;
       top: 0;
@@ -1220,14 +1358,20 @@
       @media screen and (max-width: 640px) {
         margin-right: 0;
         justify-content: flex-start;
+        -webkit-justify-content: flex-start;
         margin-top: 1.5rem;
         align-items: center;
       }
 
       .kingland-details {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         align-items: flex-start;
+        -webkit-align-items: flex-start;
         gap: 2rem;
 
         @media screen and (max-width: 1366px) {
@@ -1262,8 +1406,13 @@
 
         .real-estate {
           display: flex;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
           flex-direction: column;
+          -webkit-flex-direction: column;
           align-items: flex-start;
+          -webkit-align-items: flex-start;
           gap: 0.5rem;
 
           @media screen and (max-width: 1366px) {
@@ -1277,11 +1426,12 @@
 
           @media screen and (max-width: 640px) {
             flex-direction: row;
+            -webkit-flex-direction: row;
             margin-top: 0;
           }
 
           @media screen and (max-width: 480px) {
-            flex-direction: row;
+            -webkit-flex-direction: row;
             font-size: 15px;
           }
         }
@@ -1325,21 +1475,35 @@
   width: 100%;
   padding-top: 4rem;
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-direction: column;
+  -webkit-flex-direction: row;
   align-items: center;
+  -webkit-align-items: center;
   gap: 7rem;
 
   .container-5 {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center;
+    -webkit-align-items: center;
     width: 100%;
     gap: 4rem;
 
     .external-links {
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       width: 100%;
       justify-content: center;
+      -webkit-justify-content: center;
       gap: 6rem;
       .link-icon {
         width: 60px;
@@ -1369,7 +1533,11 @@
       max-width: 650px;
       width: 100%;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       justify-content: space-between;
+      -webkit-justify-content: space-between;
       font-size: 20px;
       font-family: "gotham-book";
 
@@ -1409,9 +1577,15 @@
       position: absolute;
       top: 0;
       display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center;
+      -webkit-align-items: center;
       justify-content: center;
+      -webkit-justify-content: center;
       gap: 4rem;
       width: 100%;
       height: 100%;
@@ -1466,6 +1640,9 @@
 
       .copyright {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         font-size: 15px;
         font-family: "gotham-book";
         gap: 2rem;
@@ -1492,6 +1669,9 @@
 
       .social-link-group {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
         gap: 4rem;
 
         @media screen and (max-width: 480px) {
